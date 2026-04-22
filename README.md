@@ -40,11 +40,11 @@ sentiment-analysis-app/
 
 ## Dashboard
 
-![Dashboard](./screenshots/app_dashboard.png)
+![Dashboard]([./screenshots/app_dashboard.png](https://github.com/yashwanthr12/sentiment-analysis-app/blob/main/screenshorts/app_dashboard.png))
 
 ## Output
 
-![Output](./screenshots/output.png)
+![Output]([./screenshots/output.png](https://github.com/yashwanthr12/sentiment-analysis-app/blob/main/screenshorts/output.png))
 
 
 ## 💻 How to Run Locally
