@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Sentiment Analysis App</h1>
+        <p class="subtitle">Enter a sentence, paragraph, or review below to analyze its emotion.</p>
+        
+        <form action="/analyze" method="POST">
+            <textarea name="user_text" rows="5" placeholder="Type something here..." required>{{ original_text }}</textarea>
+            <button type="submit">Analyze Sentiment</button>
+        </form>
+
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+
+        {% if sentiment %}
+            <div class="results-card">
+                <h2>Analysis Results</h2>
+                
+                <div class="result-item sentiment-{{ sentiment.lower() }}">
+                    <strong>Sentiment:</strong> {{ sentiment }} {{ emoji }}
+                </div>
+                
+                <div class="result-item">
+                    <strong>Polarity:</strong> <span class="score">{{ polarity }}</span>
+                    <span class="tooltip">(Scale: -1 to +1. Negative means angry/sad, Positive means happy/good)</span>
+                </div>
+                
+                <div class="result-item">
+                    <strong>Subjectivity:</strong> <span class="score">{{ subjectivity }}</span>
+                    <span class="tooltip">(Scale: 0 to 1. 0 is a pure fact, 1 is a pure personal opinion)</span>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
