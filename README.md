@@ -39,11 +39,11 @@ sentiment-analysis-app/
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/yashwanthr12/sentiment-analysis-app/main/screenshots/app_dashboard.png" width="700"/>
+  <img src="screenshorts/app_dashboard.png" width="700"/>
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/yashwanthr12/sentiment-analysis-app/main/screenshots/output.png" width="700"/>
+  <img src="screenshorts/output.png" width="700"/>
 </p>
 
 ## 💻 How to Run Locally
