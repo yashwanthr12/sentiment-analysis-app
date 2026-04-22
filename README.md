@@ -38,14 +38,11 @@ sentiment-analysis-app/
 
 ## 📸 Screenshots
 
-## Dashboard
+### Dashboard
+<img src="./screenshots/app_dashboard.png" width="700"/>
 
-![Dashboard]([./screenshots/app_dashboard.png](https://github.com/yashwanthr12/sentiment-analysis-app/blob/main/screenshorts/app_dashboard.png))
-
-## Output
-
-![Output]([./screenshots/output.png](https://github.com/yashwanthr12/sentiment-analysis-app/blob/main/screenshorts/output.png))
-
+### Output
+<img src="./screenshots/output.png" width="700"/>
 
 ## 💻 How to Run Locally
 Follow these steps to set up and run the project on your local machine:
